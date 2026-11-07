@@ -19,10 +19,11 @@
 <main>
   <img src="icon-192.png" alt="">
   <h1>Lista della spesa</h1>
-  <p id="msg">Per installarla: menu ⋮ di Chrome → Aggiungi a schermata Home → Installa.</p>
+  <p id="msg">Per installarla: menu ⋮ di Chrome → Installa app.</p>
   <a id="go" href="https://claude.ai/artifact/77LxmVGZA5JKEzUAuEJXtL">Apri la lista</a>
 </main>
 <script>
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(function(){});
   // Aperta dall'icona sulla schermata Home: va subito alla lista su Claude.
   // Aperta nel browser: resta qui, così puoi installarla.
   if (matchMedia("(display-mode: standalone)").matches || navigator.standalone) {
