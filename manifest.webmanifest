@@ -1,7 +1,7 @@
 {
   "name": "Lista della spesa",
   "short_name": "Lista spesa",
-  "start_url": "./",
+  "start_url": "./?avvio=app",
   "scope": "./",
   "display": "standalone",
   "background_color": "#0b7a62",
@@ -24,6 +24,6 @@
       "purpose": "maskable"
     }
   ],
-  "id": "/lista-spesa/",
+  "id": "/lista-spesa/app-v2",
   "description": "Lista della spesa: fotografa il foglio e spunta i prodotti"
 }
